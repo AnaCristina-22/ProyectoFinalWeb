@@ -23,7 +23,6 @@ nav a{
     font-size: 14px;
 }
 
-/* ===== TITULO + INPUT ===== */
 .todo-input{
     text-align: center;
     margin-top: 20px;
@@ -58,7 +57,6 @@ nav a{
     font-weight: bold;
 }
 
-/* ===== CONTENIDO PRINCIPAL ===== */
 .todo-content{
     width: 900px;
     margin: 40px auto;
@@ -66,7 +64,6 @@ nav a{
     gap: 30px;
 }
 
-/* ===== CARD ===== */
 .card{
     width: 650px;
     background-color: #f4f4f4;
@@ -93,8 +90,6 @@ nav a{
     margin-top: 20px;
     border-top: 2px solid #333;
 }
-
-/* ===== SIDEBAR ===== */
 .sidebar{
     width: 180px;
     background-color: #f4f4f4;
@@ -117,9 +112,4 @@ nav a{
     cursor: pointer;
 }
 
-/* ===== FOOTER ===== */
-footer{
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+
