@@ -16,43 +16,68 @@
 </header>
 
 <main>
-<section class="todo-input">
-        <img src="https://todo.uiineed.com/public/img/todo.svg" alt="Todo List Icon" width="200px" height="50px">
-        <div class="input-box">
-            <input type="text" placeholder="Add a to-do item...">
-            <button>Add</button>
+
+
+<section class="entrada-tarea">
+
+    <img src="https://todo.uiineed.com/public/img/todo.svg"
+         alt="Icono Lista"
+         width="200"
+         height="50">
+
+    <div class="caja-input">
+        <input id="inputTarea"
+               type="text"
+               placeholder="Agregar una tarea...">
+        <button id="btnAgregar">Agregar</button>
+    </div>
+
+</section>
+
+<section class="contenido-tareas">
+
+
+    <article class="card">  
+         <div class="header-card">
+             <button id="btnMarcarTodas">Marcar todas ✔</button>
+                <h3>Actúa ahora, simplifica tu vida.</h3>       
         </div>
-    </section>
+        <hr>
 
-    <section class="todo-content">
+        <div id="estado" class="estado"></div>
+        
+        <ul id="listaTareas" class="lista-tareas"></ul>
 
-        <article class="card">
-            <h3>Act Now, Simplify Life.</h3>
-            <hr>
+        <div class="pie-tareas">
+            <p id="contadorPendientes">0 tareas pendientes</p>
+        </div>
 
-            <p><strong>Add Your First To-Do Item!</strong></p>
+    </article>
 
-            <p>Usage Tips:</p>
-            <ul>
-                <li>Press Enter to submit.</li>
-                <li>Drag to reorder tasks.</li>
-                <li>Double-click to edit.</li>
-                <li>Data is stored locally.</li>
-                <li>Supports download/import.</li>
-            </ul>
+    <aside class="sidebar">
 
-            <div class="card-footer"></div>
-        </article>
+        <h3>OPEN ✨</h3>
 
+        <button class="btn-filtro active" data-filtro="todas">
+            Todas
+        </button>
 
-        <aside class="sidebar">
-            <h3>OPEN ✨</h3>
-            <button>All</button>
-            <button>Import(txt/json)</button>
-        </aside>
+        <button class="btn-filtro" data-filtro="pendientes">
+            Pendientes
+        </button>
 
-    </section>
+        <button class="btn-filtro" data-filtro="completadas">
+            Completadas
+        </button>
+
+        <hr>
+
+    </aside>
+
+</section>
 
 </main>
+
+<script src="app.js"></script>
 </body>
 </html>
