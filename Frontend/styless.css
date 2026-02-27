@@ -1,0 +1,238 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#b3ccd9;
+    background-image: radial-gradient(#ccd6db 1px, transparent 1px);
+    background-size:20px 20px;
+}
+
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    padding:15px 40px;
+}
+
+nav a{
+    margin-left:15px;
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+}
+
+
+.entrada-tarea{
+    text-align:center;
+    margin-top:20px;
+}
+
+.caja-input{
+    max-width:650px;  
+    width:100%;
+    margin:20px auto;
+    display:flex;
+}
+
+#inputTarea{
+    flex:1;
+    padding:18px;
+    border:3px solid black;
+    border-right:none;
+    border-radius:20px 0 0 20px;
+    font-size:18px;
+    background:white;
+}
+
+#btnAgregar{
+    width:150px;
+    border:3px solid black;
+    background:#f2c6d6;
+    border-radius:0 20px 20px 0;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+#btnAgregar:hover{
+    background:#e5a9c0;
+}
+
+.contenido-tareas{
+    max-width:950px;  
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+
+.card{
+    flex:3;           
+    max-width:700px; 
+    background:#f5f5f5;
+    border:3px solid black;
+    border-radius:20px;
+    padding:20px;
+}
+
+.header-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.card h3{
+    font-size:18px;
+}
+
+.card hr{
+    border:1px solid black;
+    margin:10px 0 20px 0;
+}
+
+.lista-tareas{
+    list-style:none;
+}
+
+.lista-tareas li{
+    display:flex;
+    align-items:center;
+    padding:12px 10px;
+    border-bottom:1px solid black;
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.lista-tareas li.pendiente{
+    background-color:#fffad1;
+}
+
+.lista-tareas li.completada-item{
+    background-color:#d0f3d0;
+}
+
+.lista-tareas li span{
+    flex:1;
+    margin-left:10px;
+    font-size:15px;
+}
+
+.completada{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.lista-tareas li button{
+    background:transparent;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    margin-left:8px;
+    transition:0.2s;
+}
+
+.lista-tareas li button:hover{
+    transform:scale(1.2);
+}
+
+.pie-tareas{
+    margin-top:15px;
+    padding-top:10px;
+}
+
+#contadorPendientes{
+    font-size:14px;
+}
+
+#btnMarcarTodas{
+    padding:6px 12px;
+    border:2px solid black;
+    background:#d9f2d9;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+#btnMarcarTodas:hover{
+    background:#b8e6b8;
+}
+
+.sidebar{
+    flex:1;           
+    max-width:220px;    
+    background:#7cc0b8;
+    border:3px solid black;
+    border-radius:20px;
+    padding:20px;
+}
+
+.sidebar h3{
+    background:#d9a5b3;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.sidebar button{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:2px solid black;
+    background:white;
+    cursor:pointer;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.sidebar button:hover{
+    background:#f2c6d6;
+    transform:scale(1.03);
+}
+
+.btn-filtro.active{
+    background:#f2c6d6;
+}
+
+@media (max-width:768px){
+
+    .contenido-tareas{
+        flex-wrap:wrap;
+    }
+
+    .card{
+        max-width:100%;
+        flex:1 1 100%;
+    }
+
+    .sidebar{
+        max-width:100%;
+        flex:1 1 100%;
+        margin-top:20px;
+    }
+
+    .caja-input{
+        flex-direction:column;
+    }
+
+    #inputTarea{
+        border-radius:20px;
+        border-right:3px solid black;
+        margin-bottom:10px;
+    }
+
+    #btnAgregar{
+        width:100%;
+        border-radius:20px;
+    }
+
+}
